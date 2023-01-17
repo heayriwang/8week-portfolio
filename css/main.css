@@ -41,17 +41,22 @@ body {
     top: 0;
     left: 0;
 
+    z-index: 1000;
+
     padding: 0 50px;
     justify-content: space-between;
     line-height: 100px;
-    background: #fff;
+    background: rgba(252, 252, 252, 0.9);
     display: flex;
+
 }
 
 #header h1 {
 
     font-size: 0;
 }
+
+
 
 #header .gnb>ul {
     display: flex;
@@ -98,7 +103,6 @@ body {
 
 #header .gnb>ul>li:hover .menu_wrap {
     display: block;
-
 }
 
 
@@ -110,15 +114,13 @@ body {
     justify-content: center;
     padding: 40px 100px;
     gap: 50px;
+
 }
 
 #header .mega img {
     width: 250px;
     padding: 10px 0;
 }
-
-
-
 
 #header .mega .right_menu {
     display: flex;
@@ -136,12 +138,7 @@ body {
 
 
 
-
-
-
-
-
-
+/* search input */
 #header .search input {
     outline: none;
     border: none;
@@ -149,14 +146,18 @@ body {
     padding: 5px 0;
     width: 100px;
     transition: 0.5s;
+    background: transparent;
+    ;
 }
 
 #header .search input:focus {
     width: 120px;
+
 }
 
 #header .search input::placeholder {
     color: #ddd;
+
 }
 
 #header .search input:focus::placeholder {
@@ -172,4 +173,154 @@ body {
 
 #header .search_toggle {
     display: none;
+}
+
+
+
+
+/* mainVisual */
+#mainVisual {
+    position: relative;
+}
+
+#mainVisual .mainSlide .itm {
+    height: 750px;
+
+}
+
+#mainVisual .mainSlide .itm01 {
+    background: url(../images/img_banner1_6.jpg) no-repeat center top/cover;
+
+}
+
+
+#mainVisual .mainSlide .itm02 {
+    background: url(../images/img_banner1_7.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .mainSlide .itm03 {
+    background: url(../images/img_banner1_2.jpg) no-repeat center center/cover;
+}
+
+
+
+#mainVisual .main_slide_dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 10px;
+
+}
+
+#mainVisual .main_slide_dots li button {
+    background: #777;
+    color: #fff;
+    padding: 5px;
+    font-size: 0;
+    border-radius: 50%;
+    border: 1px;
+}
+
+#mainVisual .main_slide_dots li.on button {
+    background: hsl(36, 71%, 64%);
+}
+
+#mainVisual .mainSlide .itm01 strong {
+    display: block;
+    margin: 350px 0 0 150px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    text-indent: -4px;
+}
+
+#mainVisual .mainSlide .itm02 strong {
+    display: block;
+    margin: 350px 0 0 950px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    text-indent: -4px;
+}
+
+#mainVisual .mainSlide .itm03 strong {
+    display: block;
+    margin: 250px 0 0 60px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    text-indent: -4px;
+}
+
+
+#mainVisual .mainSlide .itm p {
+    margin: 20px 0 0 410px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+
+}
+
+#mainVisual .mainSlide .itm02 p {
+
+    margin: 20px 0 0 950px;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+
+}
+
+#mainVisual .mainSlide .itm03 p {
+
+    margin: 20px 0 0 460px;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+
+}
+
+#mainVisual .mainSlide .itm strong {
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: 0.5s 0.5s;
+}
+
+#mainVisual .mainSlide .itm.on strong {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s 0.5s;
+}
+
+#mainVisual .mainSlide .itm p {
+    opacity: 0;
+    transform: translate(0, 100px);
+}
+
+#mainVisual .mainSlide .itm.on p {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s 1s;
+}
+
+
+
+
+
+
+/* slideTab */
+#slideTab {
+    position: relative;
+    background: url(../images/bg_prd_maxim.jpg);
+    height: 750px;
 }
