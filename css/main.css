@@ -323,4 +323,67 @@ body {
     position: relative;
     background: url(../images/bg_prd_maxim.jpg);
     height: 750px;
+    padding: 200px 0 0 0;
+}
+
+#slideTab h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+#slideTab .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#slideTab .menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    gap: 30px;
+}
+
+#slideTab .menu button {
+    background: transparent;
+    border: none;
+}
+
+#slideTab .menu>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: tomato;
+    margin: 5px auto;
+}
+
+#slideTab .menu>li.on::after {
+    width: 30px;
+    transition: 0.5s;
+}
+
+#slideTab .con>div {
+    visibility: hidden;
+    height: 0;
+}
+
+#slideTab .con>div.on {
+    visibility: visible;
+    height: auto;
+}
+
+#slideTab .con .sl01 {
+    display: flex;
+}
+
+#slideTab .con figure {
+    padding: 0 15px;
+
+}
+
+#slideTab .slide {
+    margin: 0 -15px;
 }
