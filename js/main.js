@@ -54,7 +54,7 @@ $(function () {
 
 
 
-    // toTop
+    // toTop 화살표
     $(window).on('scroll', function () {
         var scr = $(window).scrollTop();
         if (scr > 300) {
@@ -62,12 +62,38 @@ $(function () {
         } else {
             $('#toTop').fadeOut();
         }
-
-
     });
     $('#toTop').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 2000)
     });
+
+
+
+
+
+
+    // bgndVideo 동영상
+    $("#bgndVideo").YTPlayer({
+        videoURL: 'phm8lY7QUio',
+        containment: '.mainYoutubeBg',
+        showControls: false,
+        mute: true,
+        playOnlyIfVisible: true,
+    });
+
+
+
+    $('.main_Map .main_tab_menu>li button').on('click', function () {
+        var idx = $(this).parent().index();
+        $('.main_Map .main_tab_content>li').removeClass('on');
+        $('.main_Map .main_tab_content>li').eq(idx).addClass('on');
+
+        $('.main_Map .main_tab_menu>li').removeClass('on');
+        $(this).parent().addClass('on');
+    });
+
+
+
 
 
 })

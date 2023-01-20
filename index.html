@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css">
 
 
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
@@ -356,44 +358,54 @@
 
 
 
-            <!-- mainVisual_mainSlide  여기동영상 삽입으로 변경하기 -->
-            <section id="mainVisual">
-                <div class="mainSlide">
-                    <div class="itm itm01">
-                        <div class="inner">
-                            <strong>CUP OF EXCELLENCE</strong>
-                            <p>삶의 향기가 문학이 됩니다</p>
-                        </div>
 
-                    </div>
-                    <div class="itm itm02">
-                        <div class="inner">
-                            <strong>ALL YOU NEED IS LOVE AND MORE COFFEE</strong>
-                            <p>삶의 향기가 문학이 됩니다</p>
+            <!-- mainYoutubeBg -->
+            <section class="mainYoutubeBg sec">
+                <div class="tit">
+                    <h2></h2>
+                    <strong class="tit_dec">
+                    </strong>
+                </div>
+                <div id="bgndVideo" class="player"></div>
+            </section>
+
+
+
+
+
+
+
+
+            <!-- maincustomer -->
+
+            <section class="mainCustomer">
+                <h2 data-aos="fade-up" data-aos-duration="1500"><span> Brand Story </span>도심 속 정원, 숲 속 커피 공장</h2>
+                <p data-aos="fade-up" data-aos-duration="1000">맥심 플랜트는 좋은 커피를 향한 오랜 철학과 전문성을<br />
+                    ‘커피나무 (Coffee Plant)’ , ‘공장 (Production Plant)’ 그리고 ‘문화를 심는 공간 (Culture Plant)’<br />
+                    세 가지 주제로 구현한 맥심 브랜드 플래그쉽 스토어입니다.</p>
+                <div class="inner">
+                    <figure>
+                        <div class="scale_box">
+                            <a href="#!"> <img src="./images/main-slide-4-01.jpg" alt=""></a>
                         </div>
-                    </div>
-                    <div class="itm itm03">
-                        <div class="inner">
-                            <strong>A YAWN IS A SILENT SCREAM FOR COFFEE</strong>
-                            <p>삶의 향기가 문학이 됩니다</p>
+                    </figure>
+                    <figure>
+                        <div class="scale_box">
+                            <a href="#!"><img src="./images/main-slide-4-02.jpg" alt=""></a>
                         </div>
-                    </div>
+                    </figure>
 
                 </div>
-                <ul class="main_slide_dots">
-                    <li><button class="btn_o">01</button></li>
-                    <li><button class="btn_o">02</button></li>
-                    <li><button class="btn_o">03</button></li>
-
-                </ul>
             </section>
+
+
 
 
 
             <!-- mainContent -->
             <section class="mainContent">
-                <h2 data-aos="fade-up" data-aos-duration="1500">
-                    BEST TOP LOVE IT PEOPLES
+
+                <h2 data-aos="fade-up" data-aos-duration="1500"><span> BEST TOP </span>LOVE IT PEOPLES</h2>
                 </h2>
                 <p data-aos="fade-up" data-aos-duration="1000">지금 가장 인기있는 상품들을 만나보세요</p>
                 <div class="inner top">
@@ -447,29 +459,193 @@
 
 
 
-
-
-
-
-
-
-
-
-
-            <!-- maincustomer 추후작업-->
-
-            <section id="maincustomer">
-                <div class="inner">
-                    <a href="">
-                        <img src="./images/main-banner-L-221208.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./images/main-banner-R-230104.jpg" alt="">
-                    </a>
+            <!-- main_video -->
+            <section class="main_video">
+                <div class="video_wrap">
+                    <h2>Plant in Plant<br />
+                        도심 속 정원, 숲 속 커피 공장</h2>
+                    <p>커피 한 잔의 여유와 다채로운 문화가 있는 맥심플랜트에서<br />
+                        새로운 라이프 스타일과 행복을 경험해보세요</p>
+                    <a href="/">VIEW MORE</a>
+                    <a href="./index.html"></a>
+                    <video src="./images/ì»¤í_¼ - 46989.mp4" autoplay muted loop playsinline></video>
                 </div>
 
 
             </section>
+
+
+
+
+
+            <!-- mainProduct -->
+            <section class="mainProduct">
+                <h2><span>
+                        SIGNATURE
+                    </span>ONLINE STORE</h2>
+                <p> 맥심플랜트의 커피는 청명하고 우아하게 빛나는 <br />
+                    금빛 하늘을 연상시키는 시그니처 라이트 블렌드 원두입니다
+                </p>
+                <div class="inner">
+                    <figure>
+                        <div class="img_box">
+                            <img src="./images/d99a48bb67d2c8b577288b500ef480ab.jpg" alt="">
+                            <div class="service">
+                                <a href="#!"><i class="xi-plus"></i></a>
+                                <a href="#!"><i class="xi-heart-o"></i></a>
+                            </div>
+                        </div>
+                        <strong>[NEW] 맥심플랜트 시그니처 머그 출시 안내</strong>
+                        <a class="buy" href="#!">BUY</a>
+                    </figure>
+                    <figure>
+                        <div class="img_box">
+                            <img src="./images/3916b15cd4388d6ac0de30b29c6dce26 (1).png" alt="">
+                            <div class="service">
+                                <a href="#!"><i class="xi-plus"></i></a>
+                                <a href="#!"><i class="xi-heart-o"></i></a>
+                            </div>
+                        </div>
+                        <strong>[NEW] 1월 싱글 오리진 원두 신규 출시 안내</strong>
+                        <a class="buy" href="#!">BUY</a>
+                    </figure>
+                    <figure>
+                        <div class="img_box">
+                            <img src="./images/3242854c56253b82f8857749729acd09.jpg" alt="">
+                            <div class="service">
+                                <a href="#!"><i class="xi-plus"></i></a>
+                                <a href="#!"><i class="xi-heart-o"></i></a>
+                            </div>
+                        </div>
+                        <strong>[12월의 구매 혜택] 원두 1개 구매 시, 윈터 머그컵 증정!</strong>
+                        <a class="buy" href="#!">BUY</a>
+                    </figure>
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- main_Map -->
+            <section class="main_Map sec mbg">
+                <div class="flex_inner">
+                    <div class="left">
+                        <div class="mainTab">
+                            <ul class="main_tab_menu">
+                                <li class="on"><button class="btn_o">MENU01</button></li>
+                                <li><button class="btn_o">MENU02</button></li>
+                                <li><button class="btn_o">MENU03</button></li>
+                            </ul>
+                            <ul class="main_tab_content">
+                                <li class="on">
+                                    <ul class="content">
+                                        <li><a href="#!">01 . Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit.Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span></li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                        <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                                ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a><span>[2023.01.03]</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="content">
+                                        <li><a href="">02 . Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a></li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="content">
+                                        <li><a href="">03 . Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit.</a></li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                        <li><a href="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="resposive_case">
+                            <!-- * 카카오맵 - 지도퍼가기 -->
+                            <!-- 1. 지도 노드 -->
+                            <div id="daumRoughmapContainer1674181478276"
+                                class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                            <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                            <!-- 3. 실행 스크립트 -->
+                            <script charset="UTF-8">
+                                new daum.roughmap.Lander({
+                                    "timestamp": "1674181478276",
+                                    "key": "2dhkc",
+                                    "mapWidth": "640",
+                                    "mapHeight": "360"
+                                }).render();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
 
         </main>
 
@@ -522,17 +698,16 @@
             <div class="bottom">
                 <div class="inner">
                     <address>
-                        전화번호 : <a href="tel:010-5279-1070"> 010-5279-1070</a> <br class="mbr" />
-                        이메일 : <a href="jangsulab@naver.com"> jangsulab@naver.com</a> <br class="mbr" />
+                        전화번호 : <a href="tel:070-4287-8557"> 070-4287-8557</a> <br class="mbr" />
+                        이메일 : <a href="privacy@dongsuh.co.kr"> privacy@dongsuh.co.kr</a> <br class="mbr" />
 
-                        COMPANY 장수연구소
-                        OWNER 임이령
-                        C.P.O YiRyeong Lym
+                        COMPANY. 동서식품(주) 대표이사. 이광복, <br />RUTH KJELL NIKLAS BUSINESS LICENCE. [122-81-00804] E-COMMERCE
+                        PERMIT. 제2011-인천부평-00394호 [사업자정보확인] <br />
+                        PERSONAL INFORMATION MANAGER. ADDRESS. 21314 인천광역시 부평구 새벌로 55 (청천동) 동서식품 <br />
 
-                        장수연구소 공방 상담시간 : 월-금 PM 1:00 - PM 5:00 주말 공휴일은 휴일입니다.
-                        ORDER LICENSE 2022-서울중구-1696 [사업자정보확인]
-                        BUSINESS LICENSE 358-38-00746
-                        ADDRESS 04587 서울특별시 중구 다산로36길 110 (신당동) 신당푸르지오 108동 802호
+                        CONTACT FOR MORE INFORMATION.COPYRIGHT ©맥심플랜트. ALL RIGHTS RESERVED. <br />
+
+                        고객님의 안전한 결제를 위해 저희 쇼핑몰에서 가입한 PG사의 구매안전 에스크로 서비스를 이용하실 수 있습니다.
                     </address>
                     <div class="f_link">
                         <form id="f_link">
@@ -561,7 +736,12 @@
 
 
     <script>
+
+
+
+
         AOS.init();
+
     </script>
 </body>
 
