@@ -417,7 +417,7 @@ body {
 }
 
 .sec {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .sec .tit {
@@ -778,7 +778,7 @@ body {
 
 .mainProduct .inner {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 
 }
 
@@ -788,7 +788,7 @@ body {
 }
 
 .mainProduct figure img {
-    width: 100%;
+    width: 80%;
 }
 
 .mainProduct .inner img {
@@ -832,6 +832,7 @@ body {
 .mainProduct .img_box i {
     background: #333;
     color: #fff;
+
     border-radius: 50%;
     padding: 10px;
     margin: 2px 0;
@@ -844,12 +845,21 @@ body {
 /* main_Map */
 .main_Map {
     background: #ddd;
+    height: 400px;
 }
 
 .main_Map .flex_inner {
     display: flex;
-    gap: 50px;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    gap: 100px;
     padding: 0 50px;
+}
+
+.main_Map .flex_inner>div {
+    flex: 1;
+    overflow: hidden;
 }
 
 .main_Map .main_tab_menu {
