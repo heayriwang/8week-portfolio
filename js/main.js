@@ -49,7 +49,12 @@ $(function () {
 
         $('#slideTab .menu>li').removeClass('on');
         $(this).addClass('on');
+
+        $('#slideTab').css({
+            backgroundImage: 'url(../images/bg_0' + (idx + 1) + '.jpg)',
+        })
     })
+
 
 
 
